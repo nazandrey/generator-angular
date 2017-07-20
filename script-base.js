@@ -32,7 +32,7 @@ var Generator = module.exports = function Generator() {
     this.options.appPath = this.env.options.appPath;
   }
 
-  this.env.options.testPath = this.env.options.testPath || bowerJson.testPath || 'test/spec';
+  this.env.options.testPath = this.env.options.testPath || bowerJson.testPath || 'test/unit';
 
   this.env.options.typescript = this.options.typescript;
   if (typeof this.env.options.typescript === 'undefined') {
